@@ -1,0 +1,58 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": [
+          "Hi",
+          "Hey",
+          "How are you",
+          "Is anyone there?",
+          "Hello",
+          "Good day", 
+          "hey there!",
+          "good after noon",    
+          "Good morning!",
+          "Good evening",
+          "Good afternoon",
+          "Hey there!",
+          "Hi there!",
+          "Greetings!",
+          "Howdy!",
+          "What's up?",
+          "How’s it going?",
+          "How are you?",
+          "How have you been?",
+          "Is anyone there?",
+          "Anyone available?",
+          "Are you online?",
+          "Can I talk to you?",
+          "Yo!",
+          "Nice to meet you",
+          "Hope you're doing well",
+          "Good to see you",
+          "How’s your day?",
+          "How’s everything?"
+        ],
+        "responses": [
+          "Hey :-)",
+          "Hello, thanks for visiting",
+          "Hi there, what can I do for you?",
+          "Hi there, how can I help?",
+          "Hey there!",
+          "Hello! Thanks for visiting. How can I assist you today?",
+          "Hi! How can I help you?",
+          "Hi there! What can I do for you?",
+          "Hey! How’s your day going?",
+          "Greetings! How can I assist you?",
+          "Hello! I am here to help. What do you need?",
+          "Good to see you! How can I assist?",
+          "Hi! Feel free to ask me anything.",
+          "Hey there! How’s everything?",
+          "Hello! Hope you're having a great day!",
+          "Hi there! What brings you here today?"          
+        ]
+      }    
+
+    ]
+  }
+  
