@@ -1,11 +1,458 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Index</title>
-</head>
-<body>
-   
-</body>
-</html>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+   <title>Medical Center</title>
+
+   <link rel="shortcut icon" href="../static/images/fevicon.ico.png" type="image/x-icon" />
+   <link rel="apple-touch-icon" href="../static/images/apple-touch-icon.png">
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+   <!-- Site CSS -->
+   <link rel="stylesheet" href="../static/style.css">
+   <link rel="stylesheet" href="../static/css/style.css">
+   <link rel="stylesheet" href="../static/css/colors.css">
+   <link rel="stylesheet" href="../static/css/versions.css">
+   <link rel="stylesheet" href="../static/css/responsive.css">
+   <link rel="stylesheet" href="../static/css/custom.css">
+   <script src="../static/js/modernizer.js"></script>
+   </head>
+   <body class="clinic_version">
+      <!-- LOADER -->
+      <div id="preloader">
+         <img class="preloader" src="../static/images/loaders/heart-loading2.gif" alt="">
+      </div>
+      <!-- END LOADER -->
+      <header>
+         <div class="header-top wow fadeIn">
+            <div class="container">
+               <a class="navbar-brand" href="#">
+             <img src="../static/images/logo.png" alt="image" >
+               </a>
+               <div class="right-header">
+                  <div class="header-info">
+                     <div class="info-inner">
+                        <span class="icontop"><img src="../static/images/phone-icon.png" alt="Phone icon" ></span>
+                        <span class="iconcont"><a href="tel:+011 123 456">+011 123 456</a></span>
+                     </div>
+                     <div class="info-inner">
+                        <span class="icontop"><img src="../static/images/icons8-email-50.png" alt="Email icon" ></i></span>
+                        <span class="iconcont"><a data-scroll href="mailto:info@yoursite.com">MedicalCare@gmail.com</a></span>
+                     </div>
+                     <div class="info-inner">
+                        <span class="icontop"><img src="../static/images/icons8-time-30.png" alt="Time icon" ></i></span>
+                        <span class="iconcont"><a data-scroll href="#">Daily: 7:00am - 8:00pm</a></span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="header-bottom wow fadeIn">
+            <div class="container">
+               <nav class="main-menu">
+                  <div class="navbar-header">
+                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i class="fa fa-bars" aria-hidden="true"></i></button>
+                  </div>
+
+                  <div id="navbar" class="navbar-collapse collapse">
+                     <ul class="nav navbar-nav">
+                        <li><a class="active" href="index.html">Home</a></li>
+                        <li><a data-scroll href="#about">About us</a></li>
+                        <li><a data-scroll href="#service">Services</a></li>
+                        <li><a data-scroll href="#doctors">Doctors</a></li>
+                        <li><a data-scroll href="#getintouch">Contact</a></li>
+                        <li><a href="{{ url_for('login') }}">Login</a></li>
+                     </ul>
+                  </div>
+               </nav>
+            </div>
+         </div>
+      </header>
+      <div id="home" class="parallax first-section wow fadeIn" data-stellar-background-ratio="0.4" style="background-image:url('../static/images/slider-bg.png');">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12 col-sm-12">
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div id="time-table" class="time-table-section">
+         <div class="container">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+               <div class="row">
+                  <div class="service-time one" style="background:#2895f1;">
+                     <span class="info-icon"><i class="fa fa-ambulance" aria-hidden="true"></i></span>
+                     <h3>Emergency Case</h3>
+                     <p>We bring the most worthy, those who are tender in their senses, and who are softened in heart, and those who are suffering and who are in great pain.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+               <div class="row">
+                  <div class="service-time middle" style="background:#0071d1;">
+                     <span class="info-icon"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+                     <h3>Working Hours</h3>
+                     <div class="time-table-section">
+                        <ul>
+                           <li><span class="left">Monday - Friday</span><span class="right">8.00 – 18.00</span></li>
+                           <li><span class="left">Saturday</span><span class="right">8.00 – 16.00</span></li>
+                           <li><span class="left">Sunday</span><span class="right">8.00 – 13.00</span></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+               <div class="row">
+                  <div class="service-time three" style="background:#0060b1;">
+                     <span class="info-icon"><i class="fa fa-hospital-o" aria-hidden="true"></i></span>
+                     <h3>Clinic Timetable</h3>
+                     <p>We bring those who are most worthy, those whose faces are softened by the caress of their senses, and whose hearts are those who are suffering and what are the burdens.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="about" class="section wow fadeIn">
+         <div class="container">
+            <div class="heading">
+               <span class="icon-logo"><img src="../static/images/icon-logo.png" alt="#"></span>
+               <h2>The Specialist Clinic</h2>
+            </div>
+            <!-- end title -->
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="message-box">
+                     <h4>What We Do</h4>
+                     <h2>Clinic Service</h2>
+                     <p class="lead">Everyone needs it, no one wants to know who it is. For some vehicles, not some laughter. But from the earth, who is my rightful dignissim?</p>
+                     <p>Our medical center clinic offers expert healthcare services, including general checkups, specialist consultations, diagnostics, vaccinations, emergency care, and wellness programs, ensuring compassionate, high-quality treatment for all patients.
+
+                     </p>
+                  </div>
+                  <!-- end messagebox -->
+               </div>
+               <!-- end col -->
+               <div class="col-md-6">
+                  <div class="post-media wow fadeIn">
+                     <img src="../static/images/about_03.jpg" alt="" class="img-responsive">
+                     <a href="http://www.youtube.com/watch?v=nrJtHemSPW4" data-rel="prettyPhoto[gal]" class="playbutton"><i class="flaticon-play-button"></i></a>
+                  </div>
+                  <!-- end media -->
+               </div>
+               <!-- end col -->
+            </div>
+            <!-- end row -->
+            <hr class="hr1">
+            <div class="row">
+               <div class="col-md-3 col-sm-6 col-xs-12">
+                  <div class="service-widget">
+                     <div class="post-media wow fadeIn">
+                        <a href="../static/images/clinic_01.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+                        <img src="../static/images/clinic_01.jpg" alt="" class="img-responsive">
+                     </div>
+                     <h3>Digital Control Center</h3>
+                  </div>
+                  <!-- end service -->
+               </div>
+               <div class="col-md-3 col-sm-6 col-xs-12">
+                  <div class="service-widget">
+                     <div class="post-media wow fadeIn">
+                        <a href="../static/images/clinic_02.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+                        <img src="../static/images/clinic_02.jpg" alt="" class="img-responsive">
+                     </div>
+                     <h3>Hygienic Operating Room</h3>
+                  </div>
+                  <!-- end service -->
+               </div>
+               <div class="col-md-3 col-sm-6 col-xs-12">
+                  <div class="service-widget">
+                     <div class="post-media wow fadeIn">
+                        <a href="../static/images/clinic_03.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+                        <img src="../static/images/clinic_03.jpg" alt="" class="img-responsive">
+                     </div>
+                     <h3>Specialist Physicians</h3>
+                  </div>
+                  <!-- end service -->
+               </div>
+               <div class="col-md-3 col-sm-6 col-xs-12">
+                  <div class="service-widget">
+                     <div class="post-media wow fadeIn">
+                        <a href="../static/images/clinic_01.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+                        <img src="../static/images/clinic_01.jpg" alt="" class="img-responsive">
+                     </div>
+                     <h3>Digital Control Center</h3>
+                  </div>
+                  <!-- end service -->
+               </div>
+            </div>
+            <!-- end row -->
+         </div>
+         <!-- end container -->
+      </div>
+      <div id="service" class="services wow fadeIn">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+                  <div class="inner-services" style="margin-left: 25%;">
+                     <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                        <div class="serv">
+                           <span class="icon-service"><img src="../static/images/service-icon1.png" alt="#" /></span>
+                           <h4>PREMIUM FACILITIES</h4>
+                           <p>Premium facilities include advanced diagnostics, VIP rooms, and personalized care.</p>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                        <div class="serv">
+                           <span class="icon-service"><img src="../static/images/service-icon2.png" alt="#" /></span>
+                           <h4>LARGE LABORATORY</h4>
+                           <p>A large laboratory offers advanced diagnostic testing, modern equipment, expert technicians, and accurate results for medical analysis and research.</p>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                        <div class="serv">
+                           <span class="icon-service"><img src="../static/images/service-icon3.png" alt="#" /></span>
+                           <h4>DETAILED SPECIALIST</h4>
+                           <p>Detailed specialists provide comprehensive care, accurate diagnoses, tailored treatments, and expert advice in various medical fields for optimal patient outcomes.</p>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                        <div class="serv">
+                           <span class="icon-service"><img src="../static/images/service-icon4.png" alt="#" /></span>
+                           <h4>CHILDREN CARE CENTER</h4>
+                           <p>The Children Care Center offers compassionate pediatric care, vaccinations, health check-ups, and treatment for children in a safe, child-friendly environment.</p>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                        <div class="serv">
+                           <span class="icon-service"><img src="../static/images/service-icon5.png" alt="#" /></span>
+                           <h4>FINE INFRASTRUCTURE</h4>
+                           <p>Fine infrastructure includes modern facilities, comfortable patient rooms, advanced medical equipment, and a well-organized layout, ensuring efficient healthcare delivery.</p>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                        <div class="serv">
+                           <span class="icon-service"><img src="../static/images/service-icon6.png" alt="#" /></span>
+                           <h4>ANYTIME BLOOD BANK</h4>
+                           <p>Anytime Blood Bank ensures 24/7 availability of safe, emergency blood supplies, supporting patients in critical situations and saving lives.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </div>
+      <!-- end section -->
+	  <!-- doctor -->
+	  <div id="doctors" class="parallax section db" data-stellar-background-ratio="0.4" style="background:#fff;" data-scroll-id="doctors" tabindex="-1">
+        <div class="container">
+
+		<div class="heading">
+               <span class="icon-logo"><img src="../static/images/icon-logo.png" alt="#"></span>
+               <h2>The Specialist Clinic</h2>
+            </div>
+
+            <div class="row dev-list text-center">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.2s; animation-name: fadeIn;">
+                    <div class="widget clearfix">
+                        <img src="../static/images/doctor_01.jpg" alt="" class="img-responsive img-rounded">
+                        <div class="widget-title">
+                            <h3>Soren Bo Bostian</h3>
+                            <small>Clinic Owner</small>
+                        </div>
+                        <p>Hello guys, I am Soren from Sirbistana. I am senior art director and founder of Violetta.</p>
+
+                        <div class="footer-social">
+                            <a href="#" class="btn grd1"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="btn grd1"><i class="fa fa-github"></i></a>
+                            <a href="#" class="btn grd1"><i class="fa fa-twitter"></i></a>
+                            <a href="#" class="btn grd1"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.4s; animation-name: fadeIn;">
+                    <div class="widget clearfix">
+                        <img src="../static/images/doctor_02.jpg" alt="" class="img-responsive img-rounded">
+                        <div class="widget-title">
+                            <h3>Bryan Saftler</h3>
+                            <small>Internal Diseases</small>
+                        </div>
+                        <p>Hello guys, I am Soren from Sirbistana. I am senior art director and founder of Violetta.</p>
+
+                        <div class="footer-social">
+                            <a href="#" class="btn grd1"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="btn grd1"><i class="fa fa-github"></i></a>
+                            <a href="#" class="btn grd1"><i class="fa fa-twitter"></i></a>
+                            <a href="#" class="btn grd1"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 wow fadeIn">
+                    <div class="widget clearfix">
+                        <img src="../static/images/doctor_03.jpg" alt="" class="img-responsive img-rounded">
+                        <div class="widget-title">
+                            <h3>Matthew Bayliss</h3>
+                            <small>Orthopedics Expert</small>
+                        </div>
+                        <p>Hello guys, I am Soren from Sirbistana. I am senior art director and founder of Violetta.</p>
+
+                        <div class="footer-social">
+                            <a href="#" class="btn grd1"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="btn grd1"><i class="fa fa-github"></i></a>
+                            <a href="#" class="btn grd1"><i class="fa fa-twitter"></i></a>
+                            <a href="#" class="btn grd1"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+      <div id="getintouch" class="section wb wow fadeIn" style="padding-bottom:0;">
+         <div class="container">
+            <div class="heading">
+               <span class="icon-logo"><img src="../static/images/icon-logo.png" alt="#"></span>
+               <h2>Our Location</h2>
+            </div>
+         </div>
+         <div class="contact-section3">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.0488592761358!2d79.8823015740151!3d6.884751093114229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25ba67bf0e87f%3A0xe2ef6698a5ab0562!2sMedical%20Center!5e0!3m2!1sen!2slk!4v1739892599975!5m2!1sen!2slk" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>   </body>
+
+            </div>
+         </div>
+      </div>
+      <footer id="footer" class="footer-area wow fadeIn">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-4">
+                  <div class="logo padding">
+                     <a href=""><img src="../static/images/logo.png" alt=""></a>
+                     <p>Our clinic provides expert medical care, checkups, diagnostics, specialist consultations, vaccinations, and emergency services, ensuring quality healthcare for all.</p>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="footer-info padding">
+                     <h3>CONTACT US</h3>
+                     <p><i class="fa fa-map-marker" aria-hidden="true"></i> VMM+WX2, Sri Jayawardanapura Kotter 11222</p>
+                     <p><i class="fa fa-paper-plane" aria-hidden="true"></i> MedicalCenter@gmail.com</p>
+                     <p><i class="fa fa-phone" aria-hidden="true"></i> +011 123 456</p>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="subcriber-info">
+                     <h3>SUBSCRIBE</h3>
+                     <p>Get healthy news, tip and solutions to your problems from our experts.</p>
+                     <div class="subcriber-box">
+                        <form id="mc-form" class="mc-form">
+                           <div class="newsletter-form">
+                              <input type="email" autocomplete="off" id="mc-email" placeholder="Email address" class="form-control" name="EMAIL">
+                              <button class="mc-submit" type="submit"><i class="fa fa-paper-plane"></i> ></button>
+                              <div class="clearfix"></div>
+                              <div class="mailchimp-alerts">
+                                 <div class="mailchimp-submitting"></div>
+                                 <div class="mailchimp-success"></div>
+                                 <div class="mailchimp-error"></div>
+                              </div>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <div class="copyright-area wow fadeIn">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-8">
+                  <div class="footer-text">
+                     <p>©2025 Project X Medica Chat Bot Project. All Rights Reserved.</p>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="social">
+                     <ul class="social-links">
+                        <li><a href=""><i class="fa fa-rss"></i></a></li>
+                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href=""><i class="fa fa-youtube"></i></a></li>
+                        <li><a href=""><i class="fa fa-pinterest"></i></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="chatbox">
+         <div class="chatbox__support">
+             <div class="chatbox__header">
+                 <div class="chatbox__image--header">
+                     <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+                 </div>
+                 <div class="chatbox__content--header">
+                     <h4 class="chatbox__heading--header">Chat support</h4>
+                     <h2 class="chatbox__description--header">Hi. My name is Medica. How can I help you?</h2>
+                 </div>
+             </div>
+             <div class="chatbox__messages">
+                 <div></div>
+             </div>
+            <div class="chatbox__footer">
+                 <input type="text" id="inputmesage" placeholder="Write a message..." oninput="toggleCancelButton()">
+                 <button id="cancelButton" class="cancel__button" onclick="clearChatInput()" style="display: none;">
+                  X
+               </button>
+                 <button class="chatbox__send--footer send__button">
+                  <img src="../static/images/paper-plane.png" height="25px" width="25px" alt="image">
+                 </button>
+             </div>
+         </div>
+         <div class="chatbox__button2">
+             <button><img src="../static/images/bottomlogo.jpg" class="chat-icon"/></button>
+         </div>
+     </div>
+
+     <script>
+      function toggleCancelButton() {
+          const inputField = document.getElementById("inputmesage");
+          const cancelButton = document.getElementById("cancelButton");
+
+          if (inputField.value.trim() !== "") {
+              cancelButton.style.display = "block";
+          } else {
+              cancelButton.style.display = "none";
+          }
+      }
+
+      function clearChatInput() {
+          document.getElementById("inputmesage").value = "";
+          document.getElementById("cancelButton").style.display = "none";
+      }
+  </script>
+
+<script>
+  $SCRIPT_ROOT = {{ request.script_root|tojson }};
+</script>
+
+<script src="../static/app.js"> </script>
+
+<script>
+   document.querySelector(".chatbox__button button").addEventListener("click", function() {
+       document.querySelector(".chatbox__support").classList.toggle("chatbox--active");
+   });
+   </script>
+      <!-- all js files -->
+      <script src="../static/js/all.js"></script>
+      <!-- all plugins -->
+      <script src="../static/js/custom.js"></script>
+   </html>
